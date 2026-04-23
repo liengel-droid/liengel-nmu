@@ -1,0 +1,137 @@
+@charset "UTF-8";
+*{
+    font-size: 16px;
+    font-weight: normal;
+}
+html {
+    background-color: #71b37b;
+    background-repeat: repeat;
+}
+body {
+    width: 100%;
+    max-width: 1280px;
+    position: relative;
+    min-height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #71b37b;
+}
+img {
+    max-width: 100%;
+}
+p {
+    padding-left: 20px;
+    font-family: "Inter", sans-serif; 
+    text-align: center;
+}
+h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: relative;
+         font-size: 30px;
+        text-align: center;
+}
+nav {
+    background-color: #0e8d00;
+    flex:2 0 200px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 91px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+nav ul {
+    list-style-type: none;
+    float: right;
+}
+nav ul li {
+    float: left;
+    margin: 10px;
+}
+nav ul li a {
+    font-family:Impact, Haettenschweiler, sans-serif;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    background-color: rgb(95, 185, 56);
+}
+nav ul li a:hover {
+    background-color: rgb(72, 151, 39);
+}
+header {
+    position: relative;
+    width: 1000px;
+}
+header h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 48px;
+    position: absolute;
+    top: -19px;
+    left: 485px;
+    text-align: center;
+}
+hr {
+    border: none;
+    height: 18px;
+    background-color: #587579;
+}
+.row {
+    position: relative;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ .rubik-vinyl-regular {
+  font-family: "Rubik Vinyl", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.TwoThirdCol h3{
+    font-family:Impact, Haettenschweiler, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+.TwoThirdCol p{
+    font-family: "Inter", sans-serif; 
+}
+.TwoThirdCol {
+   flex:2 0 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    min-height: 192px;
+    float: left;
+    text-decoration: none;  
+}
+.OneThirdCol h3{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+.OneThirdCol p{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;  
+}
+.OneThirdCol {
+    flex: 1 0 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left:20px;
+    margin-right: 20px;
+    position: relative;
+    min-height: 192px;
+    float: left;
+}
+
+.imggrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    width: fit-content; height:fit-content;
+    margin-left: 170px ;
+}
+
+    
