@@ -1,0 +1,152 @@
+<!DOCTYPE <html>
+    <html lang="en">
+        <head>
+        <title>BRAND DEALS</title>
+        <link href="final.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="description" content="My Main Web Page">
+        <meta name="author" content="Lillian Engel">
+        <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="Lillians Favicon.ico">
+        <style>
+
+#display {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+width: 450px;
+margin-bottom: 10px;
+margin-left: 350px;
+}
+.field {
+padding: 15px;
+background: #f3f3f3;
+border: 1px solid #ccc;
+font-size: 18px;
+}
+ #button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    width: 450px;
+    margin-left: 350px;
+  }
+  button {
+    padding: 20px;
+    cursor: pointer;
+    background-color: white;
+  }     
+</style> 
+
+</head>
+    <nav>
+    <header styles="position: static;">
+    <h1 styles="position: static;">BRAND DEALS</h1>
+    </header>
+    </nav>
+     <br>
+
+<div class="imggrid">
+<a href="https://www.thormx.com/">
+    <img src="Thor_Logo.jpg" width="300px" height="200px">
+</a>
+<a href="https://www.foxracing.com/">
+    <img src="FOX.png" width="300px" height="200px">
+</a>
+<a href="https://www.alpinestars.com/collections/sale-all?loopcd=SEg|c|g|alpinestars|719309633989|e&gad_source=1&gad_campaignid=21864235387&gbraid=0AAAAA9YGGquxQMkKknKhd51zCY7lVS-9l&gclid=Cj0KCQjw7cLOBhDmARIsAGsuA0mglVudgdVPLN9MaRuWdcKabI-YTzG6ZlcTNWp41uHi-pmT9uKj8SIaAkjhEALw_wcB">
+    <img src="Alpinestars.png" width="300px" height="200px">
+</a>
+<a href="https://www.flyracing.com/">
+    <img src="FlyRacing_Logo.jpg" width="300px" height="200px">
+</a>
+<a href="https://www.fmfracing.com/?srsltid=AfmBOopKkKXml-tB6UVbZPBNCRJHopJRzfPz4-LWolXjYfjf931Zlj0r">
+    <img src="FMF_Logo.png" width=300px" height="200px">
+</a>
+<a href="https://powersports.honda.com/">
+    <img src="Honda_Logo.jpg" width="300px" height="200px">
+</a>
+<a href="https://betausa.com/">
+    <img src="Beta_Logo.jpg" width="300px" height="200px">
+</a>
+<a href="https://www.kawasaki.com/en-us/">
+    <img src="Kawasaki_Logo.jpg" width="300px" height="200px">
+</a>
+<a href="https://www.oakley.com/en-us/category/motorsports?cid=PM-SGA_000000-1.US-Oakley-EN-B-NA-Related-Broad-Prs-NA-Ecom-NA_GogglesHelmets_oakley+motocross+goggles&s_kwcid=AL!16196!3!794798970630!b!!g!!oakley%20motocross%20goggles!23509126718!189585018222&gclsrc=aw.ds&ds_rl=1293048&gad_source=1&gad_campaignid=23509126718&gbraid=0AAAAACyJeEaINn4NF-ABIk0GF-ImvtzGv&gclid=Cj0KCQjw7cLOBhDmARIsAGsuA0nVgPQpvXEtg_-ejwBsz4-WFHk3tZTUqMwfPHCYna5-7TADDe-1H9IaAnDgEALw_wcB">
+    <img src="Oakley_Logo.png" width="300px" height="200px">
+</a>
+<a href="https://www.yamahamotorsports.com/">
+    <img src="Yamaha_Logo.png" width="300px" height="200px">
+</a>
+<a href="https://www.ktm.com/en-us.html">
+    <img src="KTM_Logo.jpg" width="300px" height="200px">
+</a>
+<a href="https://www.rockymountainatvmc.com/?srsltid=AfmBOooMpDufQRwz1omaaCUUNqsor-iodVCEFrO5GfFxkRXFC-Y5VEnN">
+    <img src="RockyMT_Logo.jpg" width="300px" height="200px">
+</a>
+<a href="https://suzukicycles.com/motocross">
+    <img src="Suzuki_Logo.jpg" width="300px" height="200px">
+</a>
+
+</div>
+<div id="display">
+<div class="field">Total: <span id="total">0</span></div>
+<div class="field">Input: <span id="input">0</span></div>
+</div>
+<div id="button-grid">
+<button onclick="setInput(0)">0</button>
+<button onclick="setInput(1)">1</button>
+<button onclick="setInput(2)">2</button>
+<button onclick="setInput(3)">3</button>
+<button onclick="setInput(4)">4</button>
+<button onclick="setInput(5)">5</button>
+<button onclick="setInput(6)">6</button>
+<button onclick="setInput(7)">7</button>
+<button onclick="setInput(8)">8</button>
+<button onclick="setInput(9)">9</button>
+
+<button onclick="addition()">+</button>
+<button onclick="subtraction()">-</button>
+<button onclick="division()">/</button>
+<button onclick="multiplication()">*</button>
+<button onclick="resetCalculator()">Reset</button>
+</div>
+
+<script>
+let total = 0;
+let input = 0;
+function updateDisplay() {
+document.getElementById("total").textContent = total;
+document.getElementById("input").textContent = input;
+}
+function setInput(value) {
+input = value;
+updateDisplay();
+}
+function addition() {
+total = total + input;
+updateDisplay();
+}
+function subtraction() {
+total = total - input;
+updateDisplay();
+}
+function multiplication() {
+total = total * input;
+updateDisplay();
+}
+function division() {
+total = total / input;
+updateDisplay();
+}
+function resetCalculator() {
+total = 0;
+input = 0;
+updateDisplay();
+}
+updateDisplay();
+</script>
+    
+    </body>
+
+
+    </html>
